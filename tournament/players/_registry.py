@@ -9,6 +9,7 @@ from typing import List, Type
 from .bobisawsome1 import ChuckNorris
 from .cooperator import Cooperator
 from .defector import Defector
+from .peterspitz import Peter_Spitz
 from .random_player import Random
 
 # List of player classes to include in tournaments by default.
@@ -16,6 +17,7 @@ REGISTERED_PLAYERS: List[Type] = [
     ChuckNorris,
     Cooperator,
     Defector,
+    Peter_Spitz,
     Random
 ]
 

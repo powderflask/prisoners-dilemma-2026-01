@@ -9,6 +9,7 @@ from typing import List, Type
 from .bobisawsome1 import ChuckNorris
 from .cooperator import Cooperator
 from .defector import Defector
+from .joubin03 import JoubinPlayer
 from .peterspitz import Peter_Spitz
 from .random_player import Random
 from .santiagosanchez15 import SmartAggressor
@@ -18,6 +19,7 @@ REGISTERED_PLAYERS: List[Type] = [
     ChuckNorris,
     SmartAggressor
     Peter_Spitz,
+    JoubinPlayer,
     Cooperator,
     Defector,
     Random,

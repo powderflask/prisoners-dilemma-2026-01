@@ -23,13 +23,12 @@ def play_match(
     if axl is None:  # pragma: no cover - dependency guard
         raise RuntimeError("Axelrod is not available. Install it to run matches.")
 
-    if seed is not None:
-        axl.seed(seed)
-
     # Instantiate players and run a match
     p1 = player_a_cls()
     p2 = player_b_cls()
     match = axl.Match((p1, p2), turns=turns)
+    if seed is not None:
+        match.set_seed(seed)
     result = match.play()
 
     game = axl.Game()

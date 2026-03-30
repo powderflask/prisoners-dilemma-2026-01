@@ -11,14 +11,16 @@ from .cooperator import Cooperator
 from .defector import Defector
 from .peterspitz import Peter_Spitz
 from .random_player import Random
+from .santiagosanchez15 import SmartAggressor
 
 # List of player classes to include in tournaments by default.
 REGISTERED_PLAYERS: List[Type] = [
     ChuckNorris,
+    SmartAggressor
+    Peter_Spitz,
     Cooperator,
     Defector,
-    Peter_Spitz,
-    Random
+    Random,
 ]
 
 

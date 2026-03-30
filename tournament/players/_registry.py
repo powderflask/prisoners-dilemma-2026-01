@@ -6,7 +6,7 @@ from __future__ import annotations
 
 from typing import List, Type
 
-from .bobisawsome1 import ChuckNorris
+from .bobisawsome1 import LebronJames
 from .cooperator import Cooperator
 from .defector import Defector
 from .joubin03 import JoubinPlayer
@@ -17,12 +17,14 @@ from .santiagosanchez15 import SneakyAggressor
 # List of player classes to include in tournaments by default.
 REGISTERED_PLAYERS: List[Type] = [
     ChuckNorris,
+    SmartAggressor,
+    Peter_Spitz,
+    JoubinPlayer,
+    LebronJames,
+    SneakyAggressor,
     Cooperator,
     Defector,
-    JoubinPlayer,
-    Peter_Spitz,
     Random,
-    SneakyAggressor
 ]
 
 
